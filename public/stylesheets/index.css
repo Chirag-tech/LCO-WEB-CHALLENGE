@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  opacity: 0.8;
+  color: plum;
+}
+.top nav ul {
+  padding: 30px;
+  padding-bottom: 0;
+  margin: 0;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: rgb(0, 0, 0);
+  border-bottom: 2px solid purple;
+}
+.top a {
+  color: orange;
+}
+.top img {
+  width: 100px;
+  height: 100px;
+  transform: translateY(-40px);
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/pexels-photo-1390266.jpeg") no-repeat center
+    center/cover;
+}
+.content .text {
+  position: relative;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "lobster";
+  letter-spacing: 5px;
+  animation-name: text;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.content h1 {
+  color: orange;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.content h2 {
+  color: white;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.content a {
+  border: 1px solid blue;
+  margin-top: 10px;
+  padding: 10px 30px;
+  color: green;
+}
+@keyframes text {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* tournament */
+.tournament {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/artimg-1.png") no-repeat center center/cover;
+}
+.area {
+  width: 50%;
+  margin: auto;
+  float: right;
+  text-align: center;
+  padding-top: 200px;
+}
+.tournament .tag h1 {
+  color: purple;
+  font-size: 2.5rem;
+  margin: auto;
+  font-family: "Faster One", cursive;
+  text-transform: capitalize;
+}
+.tournament .tag p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Black Ops One";
+  color: rgb(252, 30, 1);
+}
+.btns {
+  margin-right: 250px;
+}
+/*buttons*/
+.btns .btn {
+  padding: 10px 30px;
+  margin-right: 20px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  float: right;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: black;
+  box-shadow: 0px 0px 5px 1px red;
+  text-transform: capitalize;
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  background: rgb(2, 1, 2);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+/* modal window */
+.login {
+  width: 480px;
+  height: 60vh;
+  display: none;
+  margin: auto;
+  background: rgb(20, 20, 20);
+  box-shadow: 0px 0px 5px 3px purple;
+  color: white;
+}
+.signin {
+  width: 480px;
+  height: 75vh;
+  display: none;
+  margin: auto;
+  background: rgb(20, 20, 20);
+  box-shadow: 0px 0px 5px 3px purple;
+  color: white;
+}
+.login p,
+.signin p {
+  font-size: 1.3rem;
+  font-size: bold;
+  padding-left: 40px;
+}
+.login #uname,
+.signin #uname {
+  transform: none;
+}
+.login i,
+.signin i {
+  color: red;
+  float: right;
+}
+.login i:hover,
+.signin i:hover {
+  opacity: 0.9;
+  color: rgb(235, 45, 45);
+  cursor: pointer;
+}
+.login h1,
+.signin h1 {
+  border-bottom: 1px solid greenyellow;
+  background-color: black;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  color: white;
+  margin: 0;
+}
+.login input,
+.signin input {
+  /* position: absolute; */
+  width: 80%;
+  padding: 20px 10px;
+  margin-left: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 5px yellow;
+  color: black;
+}
+.login input[type="submit"],
+.signin input[type="submit"] {
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px 10px;
+  color: white;
+  margin-left: 48px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+  background: red;
+  border: none;
+}
+.login input[type="submit"]:hover {
+  background: purple;
+  color: white;
+  opacity: 0.9;
+}
+/* teams section */
+.teams {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  animation-name: teams;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  justify-items: center;
+  grid-column-gap: 0px;
+  margin-top: 50px;
+}
+@keyframes teams {
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.teams2 {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  animation-name: teams2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  margin-top: 50px;
+}
+@keyframes teams2 {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.container {
+  position: relative;
+  width: 300px;
+  height: 68vh;
+  box-shadow: 0px 0px 10px 5px purple;
+}
+.card,
+.card2,
+.card3,
+.card4,
+.card5 {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+.card:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover {
+  transform: rotateY(180deg);
+}
+.frontcard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: white;
+}
+.frontcard .pic {
+  width: 100%;
+  height: 45vh;
+  background: url("./images/img1.png") no-repeat center center/cover;
+}
+.frontcard .pic2 {
+  width: 100%;
+  height: 45vh;
+  background: url("./images/img2.png") no-repeat center center/cover;
+}
+.frontcard .pic3 {
+  width: 100%;
+  height: 45vh;
+  background: url("./images/img3.png") no-repeat center center/cover;
+}
+.frontcard .pic4 {
+  width: 100%;
+  height: 45vh;
+  background: url("./images/img4.png") no-repeat center center/cover;
+}
+.frontcard .pic5 {
+  width: 100%;
+  height: 45vh;
+  background: url("./images/pexels-photo-1192054.jpeg") no-repeat center
+    center/cover;
+}
+.frontcard .textarea {
+  background: black;
+  border: 1px solid black;
+  color: white;
+}
+.frontcard p {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-style: italic;
+}
+.backcard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  backface-visibility: hidden;
+  background: url(./images/sports-logo-template-for-a-basketball-tournament-2703e.png)
+    no-repeat center center/cover;
+  transform: rotateY(180deg);
+}
+span h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 3.5rem;
+  margin: auto;
+  text-transform: capitalize;
+  font-family: "Black Ops";
+  color: red;
+}
+
+/*faq*/
+.FAQ {
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.FAQ .components li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border: 1px solid rgb(48, 45, 45);
+  width: 800px;
+  color: white;
+  background: rgb(48, 45, 45);
+  padding: 20px 30px;
+  margin: auto;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.FAQ h1 {
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px 0;
+}
+.about {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+.about {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border: 1px solid rgb(48, 45, 45);
+  width: 800px;
+  color: white;
+  background: rgb(48, 45, 45);
+  padding: 20px 30px;
+  margin: 0 auto;
+  border-top: 1px solid #000000;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+/*contact*/
+.info {
+  width: 100%;
+  height: 150vh;
+  background: url(./images/artimg-3.png) no-repeat center center/cover;
+}
+.info h1 {
+  margin: auto;
+  color: white;
+  font-size: 2rem;
+  font-style: italic;
+  padding-left: 45px;
+}
+.info p {
+  margin: auto;
+  font-size: 2rem;
+  padding-top: 250px;
+  transform: translateX(-500px);
+  width: 30%;
+  color: white;
+}
+em {
+  color: whitesmoke;
+  font-size: 2rem;
+  padding-left: 100px;
+}

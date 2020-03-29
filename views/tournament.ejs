@@ -1,0 +1,43 @@
+<%- include ("partials/header.ejs")%>
+<section class="tournament">
+  <div class="area">
+    <div class="tag">
+      <h1>big tournament coming soon</h1>
+      <p>go fight for it team</p>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn btn-rounded" id="log">Login</a>
+      <a href="#" class="btn btn-rounded" id="sign">sign Up</a>
+    </div>
+  </div>
+  <section class="forms">
+    <div class="login">
+      <div class="form">
+        <h1>login<i class="fi-xwluxl-times-wide"></i></h1>
+        <form action="#">
+          <p id="uname">Username:</p>
+          <input type="text" placeholder="enter name" required />
+          <p>Password:</p>
+          <input type="password" placeholder="enter password" required />
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+    <div class="signin">
+      <div class="form">
+        <h1>Sign Up<i id="cross" class="fi-xwluxl-times-wide"></i></h1>
+        <form action="#">
+          <p id="uname">Username:</p>
+          <input type="text" placeholder="enter name" required />
+          <p>Password:</p>
+          <input type="password" placeholder="enter password" required />
+          <p>Email id:</p>
+          <input type="email" placeholder="enter email id" required />
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+  </section>
+</section>
+
+<%- include ("partials/footer.ejs")%>
