@@ -12,7 +12,7 @@ a:hover {
   opacity: 0.8;
   color: plum;
 }
-.top nav ul {
+.top1 nav ul {
   padding: 30px;
   padding-bottom: 0;
   margin: 0;
@@ -24,10 +24,11 @@ a:hover {
   background: rgb(0, 0, 0);
   border-bottom: 2px solid purple;
 }
-.top a {
+
+.top1 a {
   color: orange;
 }
-.top img {
+.top1 img {
   width: 100px;
   height: 100px;
   transform: translateY(-40px);
@@ -182,7 +183,6 @@ footer {
 }
 .login input,
 .signin input {
-  /* position: absolute; */
   width: 80%;
   padding: 20px 10px;
   margin-left: 35px;
@@ -334,7 +334,7 @@ span h1 {
   text-align: center;
   font-style: italic;
   font-size: 3.5rem;
-  margin: auto;
+  margin-top: 50px;
   text-transform: capitalize;
   font-family: "Black Ops";
   color: red;
@@ -388,10 +388,17 @@ span h1 {
   margin-top: -10px;
   margin-bottom: 10px;
 }
+.dropdown {
+  color: white;
+  font-size: 1.2rem;
+}
 
 /*contact*/
 .info {
   text-align: center;
+}
+.info h1 {
+  margin-top: 50px;
 }
 .info a {
   text-align: inherit;
@@ -416,7 +423,38 @@ span h1 {
 iframe {
   border: 2px solid black;
 }
-@media (max-width: 760px) {
+.top2,
+.top3 {
+  display: none;
+}
+@media (max-width: 375px) {
+  .top1 {
+    display: none;
+  }
+  .top2,
+  .top3 {
+    display: block;
+  }
+  .top2 img {
+    width: 100px;
+    height: 100px;
+    transform: translateY(-40px);
+  }
+  .top2 nav ul {
+    padding: 30px;
+    padding-bottom: 0;
+    margin: 0;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    border-bottom: 2px solid purple;
+  }
+  iframe {
+    width: 90%;
+  }
   .teams {
     width: 100%;
     height: 100%;
@@ -487,7 +525,7 @@ iframe {
   }
   .FAQ .components li {
     width: 300px;
-    margin-left: -32px;
+    margin-left: -33px;
   }
   .about {
     width: 300px;
@@ -498,5 +536,38 @@ iframe {
   }
   .container #last {
     margin-bottom: 20px;
+  }
+  .top3 {
+    width: 100%;
+    height: 40vh;
+    background-color: #000000;
+  }
+  .top3 nav ul {
+    transform: translateY(-15px);
+    font-size: 2rem;
+    font-family: "Black Ops One";
+    float: right;
+    list-style: none;
+    padding: 0 0 5px 0;
+  }
+  .top3 a {
+    color: red;
+  }
+  .top3 li {
+    padding: 20px 10px 0 0;
+    border-bottom: 2px dotted white;
+  }
+  .top3 a:hover {
+    color: orange;
+  }
+  .top3 li:hover {
+    padding: 20px 10px 0 0;
+    border-bottom: 2px dotted purple;
+  }
+  .top3 {
+    display: none;
+  }
+  .dis {
+    display: block !important;
   }
 }

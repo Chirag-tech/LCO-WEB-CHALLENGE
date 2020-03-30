@@ -5,6 +5,12 @@ var signIn = document.getElementById("sign");
 var plus = document.querySelectorAll("#qna");
 var about = document.getElementsByClassName("about");
 var area = document.querySelector(".area");
+var menu = document.querySelector(".fi-xnsuxl-three-bars-solid");
+//nav bar
+menu.addEventListener("click", function(e) {
+  var nav1 = document.querySelector(".top3");
+  nav1.classList.toggle("dis");
+});
 //faq
 function selectItem(e) {
   e.preventDefault();
