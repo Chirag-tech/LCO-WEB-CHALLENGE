@@ -372,6 +372,7 @@ span h1 {
   display: none;
 }
 .show {
+  color: white;
   display: block !important;
 }
 .about {
@@ -387,29 +388,115 @@ span h1 {
   margin-top: -10px;
   margin-bottom: 10px;
 }
+
 /*contact*/
 .info {
-  width: 100%;
-  height: 150vh;
-  background: url(./images/artimg-3.png) no-repeat center center/cover;
+  text-align: center;
 }
-.info h1 {
-  margin: auto;
-  color: white;
-  font-size: 2rem;
-  font-style: italic;
-  padding-left: 45px;
+.info a {
+  text-align: inherit;
+  font-size: 50px;
+  padding-right: 10px;
 }
 .info p {
-  margin: auto;
-  font-size: 2rem;
-  padding-top: 250px;
-  transform: translateX(-500px);
-  width: 30%;
-  color: white;
+  font-style: italic;
+  font-size: 1.2rem;
 }
-em {
-  color: whitesmoke;
-  font-size: 2rem;
-  padding-left: 100px;
+.info a:hover {
+  font-size: 45px;
+}
+.info .dp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  border: 2px solid #fff;
+  background: url(./images/me.jpg) no-repeat center center/cover;
+}
+iframe {
+  border: 2px solid black;
+}
+@media (max-width: 760px) {
+  .teams {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100%;
+  }
+  .teams .container {
+    height: 65vh;
+  }
+  .teams2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 20px;
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  .teams2 .container {
+    height: 65vh;
+  }
+  .teams2 .last {
+    margin-bottom: 30px;
+  }
+  .tournament {
+    width: 100%;
+    height: 80vh;
+    background: url("./images/artimg-1.png") no-repeat center center/cover;
+  }
+  .area {
+    width: 50%;
+    transform: translateX(-100px);
+    padding-top: 40px;
+  }
+  .tournament .tag h1 {
+    font-size: 2rem;
+    color: rgb(0, 70, 128);
+  }
+  .tournament .tag p {
+    font-size: 2rem;
+    width: 375px;
+    margin-left: -85px;
+  }
+  .btns {
+    margin: auto;
+    text-align: center;
+    display: grid;
+  }
+  /*buttons*/
+  .btns .btn {
+    margin: 30px;
+  }
+  /* modal window */
+  .login {
+    width: 350px;
+    height: 50vh;
+  }
+  .signin {
+    width: 350px;
+    height: 65vh;
+  }
+  .footer {
+    padding: 12px 0;
+  }
+  .FAQ {
+    width: 100%;
+  }
+  .FAQ .components li {
+    width: 300px;
+    margin-left: -32px;
+  }
+  .about {
+    width: 300px;
+    margin-left: -32px;
+  }
+  .content .text {
+    font-size: 1.3rem;
+  }
+  .container #last {
+    margin-bottom: 20px;
+  }
 }
