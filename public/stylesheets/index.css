@@ -254,7 +254,7 @@ footer {
 .container {
   position: relative;
   width: 300px;
-  height: 68vh;
+  height: 61.5vh;
   box-shadow: 0px 0px 10px 5px purple;
 }
 .card,
@@ -339,7 +339,6 @@ span h1 {
   font-family: "Black Ops";
   color: red;
 }
-
 /*faq*/
 .FAQ {
   width: 100%;
@@ -427,7 +426,7 @@ iframe {
 .top3 {
   display: none;
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   .top1 {
     display: none;
   }
@@ -459,11 +458,14 @@ iframe {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-gap: 20px;
     grid-template-columns: 100%;
+    grid-row-gap: 3em;
   }
   .teams .container {
-    height: 65vh;
+    height: 60vh;
+  }
+  .teams .container .textarea {
+    height: 15vh;
   }
   .teams2 {
     width: 100%;
@@ -471,14 +473,14 @@ iframe {
     display: grid;
     grid-template-columns: 100%;
     margin-top: 20px;
-    grid-gap: 20px;
+    grid-row-gap: 3em;
     justify-items: center;
   }
   .teams2 .container {
-    height: 65vh;
+    height: 60vh;
   }
-  .teams2 .last {
-    margin-bottom: 30px;
+  .teams2 .container .textarea {
+    height: 15vh;
   }
   .tournament {
     width: 100%;
@@ -511,11 +513,11 @@ iframe {
   /* modal window */
   .login {
     width: 350px;
-    height: 50vh;
+    height: 55vh;
   }
   .signin {
     width: 350px;
-    height: 65vh;
+    height: 70vh;
   }
   .footer {
     padding: 12px 0;
@@ -531,6 +533,9 @@ iframe {
     width: 300px;
     margin-left: -32px;
   }
+  .components {
+    margin-left: 20px;
+  }
   .content .text {
     font-size: 1.3rem;
   }
@@ -539,7 +544,7 @@ iframe {
   }
   .top3 {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-color: #000000;
   }
   .top3 nav ul {
